@@ -1,6 +1,6 @@
 {
   "name": "github-actions-testing",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "main": "index.js",
   "author": "Kevin Kipp",
   "license": "MIT",
