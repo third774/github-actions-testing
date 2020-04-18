@@ -1,5 +1,8 @@
 {
   "name": "@third774/testing-github-actions",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.12.0",
   "main": "index.js",
   "author": "Kevin Kipp",
