@@ -35,5 +35,5 @@ jobs:
       - run: npm publish --tag ${VERSION}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          WAT: ${{github.ref}}
+          WAT: "arrrrrgggghh"
 
