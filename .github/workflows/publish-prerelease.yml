@@ -31,9 +31,9 @@ jobs:
       - run: npm ci
       - run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - run: echo "::debug VERSION ${VERSION}"
-      - run: echo "::debug WAT ${WAT}"
+      - run: echo "::debug TAG_NAME ${TAG_NAME}"
       - run: npm publish --tag ${VERSION}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          WAT: "arrrrrgggghh"
+          TAG_NAME: ${{github.event.release.tag_name}}
 
