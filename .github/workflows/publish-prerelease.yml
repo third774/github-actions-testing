@@ -30,6 +30,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: export VERSION=${GITHUB_REF/refs\/tags\/}
+      - run: echo "publishing version tag: ${VERSION}"
       - run: npm publish --tag ${VERSION}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
